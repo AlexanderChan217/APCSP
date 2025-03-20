@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading Section */
+.heading {
+    padding: 80px;
+    font-size: 2.5rem;
+    text-align: center;
+    background: linear-gradient(90deg, #4CAF50, #3A9D44);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #2C7A2B;
+}
+
+/* Title Animation */
+.title-animation {
+    animation: titleBounce 2s ease-out, fadeIn 1.5s ease-out;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Section Styling */
+.section {
+    background-color: #E9E2FA;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Section Headings Animation */
+.slide-in-from-left {
+    animation: slideInLeft 1s ease-out;
+}
+
+.slide-in-from-right {
+    animation: slideInRight 1s ease-out;
+}
+
+/* Image Styling */
+.image-style {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Image Sliding Effect */
+.slide-in-from-bottom {
+    animation: slideInBottom 1s ease-out;
+}
+
+/* Hover Effect on Images */
+.image-style:hover {
+    transform: scale(1.05);
+}
+
+/* Text Styling */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes titleBounce {
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
